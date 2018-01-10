@@ -1,0 +1,48 @@
+{
+  "name": "react-tdd-a11y",
+  "version": "0.0.1",
+  "description": "React application for demonstrating accessible test driven development",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "PORT=$npm_package_config_port react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "integration": "mocha test/integration.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanb/react-tdd-a11y.git"
+  },
+  "keywords": [
+    "React",
+    "a11y",
+    "accessibility",
+    "tdd"
+  ],
+  "author": "Dylan Barrell (dylan@barrell.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanb/react-tdd-a11y/issues"
+  },
+  "homepage": "https://github.com/dylanb/react-tdd-a11y#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17"
+  },
+  "config": {
+    "port": "3009"
+  },
+  "devDependencies": {
+    "axe-webdriverjs": "^1.2.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "react-axe": "^2.1.9",
+    "selenium-webdriverjs": "^0.1.1-r18456"
+  }
+}
