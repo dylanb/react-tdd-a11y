@@ -9,6 +9,8 @@ import {
 import './App.css';
 
 if (process.env.NODE_ENV !== 'production') {
+  var axe = require('react-axe');
+  axe(React, ReactDOM, 1000);
 }
 
 class App extends Component {
