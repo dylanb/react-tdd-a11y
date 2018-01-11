@@ -6,6 +6,8 @@ import {
   Link
 } from 'react-router-dom'
 
+import Login from './login.js'
+
 import './App.css';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -28,9 +30,10 @@ class App extends Component {
         <div className="App">
           <header>
             <h1>My Application</h1>
-            <Link to="login">Login</Link>
+            <Link to="/login">Login</Link>
           </header>
           <main>
+            <Route path="/login" component={Login} />
           </main>
           <footer>
           </footer>
