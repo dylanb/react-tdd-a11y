@@ -26,7 +26,13 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <h1>My Application</h1>
+          <header>
+            <h1>My Application</h1>
+          </header>
+          <main>
+          </main>
+          <footer>
+          </footer>
         </div>
       </Router>
     );
