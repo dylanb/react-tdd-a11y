@@ -26,6 +26,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <h1>My Application</h1>
         </div>
       </Router>
     );
