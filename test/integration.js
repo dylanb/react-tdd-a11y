@@ -32,12 +32,6 @@ describe('Integration tests', function() {
     driver
       .findElement(Selenium.By.css('.App'))
       .then(function() {
-      done()
-      })
-  })
-  it('should pass the accessibility tests', function (done) {
-    driver.findElement(Selenium.By.css('.App'))
-      .then(function() {
         new AxeBuilder(driver)
           .analyze(function (results) {
             TestUtils.printViolations(results.violations)
