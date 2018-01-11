@@ -28,6 +28,7 @@ class App extends Component {
         <div className="App">
           <header>
             <h1>My Application</h1>
+            <Link to="login">Login</Link>
           </header>
           <main>
           </main>
