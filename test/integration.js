@@ -40,4 +40,16 @@ describe('Integration tests', function() {
           })
       })
   })
+  it('should have a link pointing to the "login" route', function (done) {
+    driver
+      .findElement(Selenium.By.css('.App a[href="login"]'))
+      .then(function() {
+        new AxeBuilder(driver)
+          .analyze(function (results) {
+            TestUtils.printViolations(results.violations)
+            assert.equal(results.violations.length, 0)
+            done()
+          })
+      })
+  })
 })
